@@ -32,7 +32,7 @@ const SeccionComentarios = () => {
                     <table>
                         <tr>
                             <td>
-                                <img className='imguser' src="../user.png"></img>
+                                <img className='imguser' alt="aea" src="../user.png"></img>
                             </td>
                             <td>
                                 <h3 className='hcomment'>{v.title}</h3>

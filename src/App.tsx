@@ -4,9 +4,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  NavLink
-
+  Link
 } from 'react-router-dom';
 import Inicio from './pages/Inicio';
 import Contacto from './pages/Contacto';
