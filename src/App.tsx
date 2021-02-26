@@ -15,16 +15,18 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h1>Real React Now</h1>
-        <hr></hr>
+        
         <Router>
+            <div>
+              <h1 style={{textDecoration:'none',display:'block',}}>React Now 2</h1>              
+            </div>
+            <div>
+              <Link style={{textDecoration:'none',display:'inline-block', paddingRight:'10px', fontWeight:'bold'}} to="/#"><div>Inicio</div></Link>            
+              <Link style={{textDecoration:'none',display:'inline-block', fontWeight:'bold'}} to="/contacto"><div>Contacto</div></Link>
+              <Link style={{textDecoration:'none',display:'inline-block', paddingLeft:'10px', fontWeight:'bold'}} to="/comentarios"><div>Comentarios</div></Link>
+            </div>                    
+            <hr></hr>
           
-          <div>   
-              <Link to="/#"><div>Inicio</div></Link>            
-              <Link to="/contacto"><div>Contacto</div></Link>
-              <Link to="/comentarios"><div>Comentarios</div></Link>
-            
-          </div>
           
           <Switch>
             <Route path="/" exact>

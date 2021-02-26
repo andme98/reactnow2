@@ -9,6 +9,7 @@ const Comentarios = () => {
                  saber de ti, para considerar mejoras en la calidad de nuestro servicio.
                  </p>
             <SeccionComentarios />
+            <img className='second-image' src="../canvas.png"></img>  
         </div>
     )
 }
