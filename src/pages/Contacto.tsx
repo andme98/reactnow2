@@ -21,7 +21,7 @@ const Contacto = () => {
                 <h3>-Correo electrónico-</h3>
                 <h5 className='soft'>dev_group@gmail.com</h5>
             </div>
-            <img src="../cat.png"></img>  
+            <img src="../cat.png" alt="cat"></img>  
         </div>
         
     )
