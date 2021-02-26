@@ -30,11 +30,11 @@ const SeccionComentarios = () => {
             <div className='comentario'>   
                 <div>
                     <table>
-                        <tr aria-rowSpan={6}>
-                            <td rowSpan={2}>
+                        <tr>
+                            <td>
                                 <img className='imguser' src="../user.png"></img>
                             </td>
-                            <td rowSpan={4}>
+                            <td>
                                 <h3 className='hcomment'>{v.title}</h3>
                                 <h4 className='hemail'>{v.user}</h4>
                                 <h5 className='hcomment'>{v.content}</h5>
