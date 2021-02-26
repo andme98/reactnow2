@@ -1,24 +1,54 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink
+
+} from 'react-router-dom';
+import Inicio from './pages/Inicio';
+import Contacto from './pages/Contacto';
+import Comentarios from './pages/Comentarios';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h1>Real React Now</h1>
+        <hr></hr>
+        <Router>
+          
+          <div>   
+              <Link to="/#"><div>Inicio</div></Link>            
+              <Link to="/contacto"><div>Contacto</div></Link>
+              <Link to="/comentarios"><div>Comentarios</div></Link>
+            
+          </div>
+          
+          <Switch>
+            <Route path="/" exact>
+                <Inicio />
+            </Route>
+          </Switch>
+
+          <Switch>
+            <Route path="/contacto" exact>
+                <Contacto />
+            </Route>
+          </Switch>
+
+          <Switch>
+            <Route path="/comentarios" exact>
+                <Comentarios />
+            </Route>
+          </Switch>
+        </Router>
+
+        <Footer />
+      </div>
     </div>
   );
 }
