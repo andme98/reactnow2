@@ -32,7 +32,7 @@ const Inicio = () => {
                      qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum 
                      qui dolorem eum fugiat quo voluptas nulla pariatur?"    
             </p>
-            <img src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/methode/2020/01/03/b2e584e8-2df4-11ea-8334-1a17c6a14ef4_image_hires_152432.jpg?itok=GI5xH3oh&v=1578036278"></img>
+            <img alt="lisa lisa" src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/methode/2020/01/03/b2e584e8-2df4-11ea-8334-1a17c6a14ef4_image_hires_152432.jpg?itok=GI5xH3oh&v=1578036278"></img>
         
         </div>
 
