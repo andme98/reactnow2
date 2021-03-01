@@ -1,9 +1,5 @@
 import React from 'react'
 import {useState} from 'react'
-import Comentario from './Comentario';
-import SingleComment from './SingleComment';
-
-
 
 const CommentBox = () => {
 
@@ -16,9 +12,6 @@ const CommentBox = () => {
     const setterComment = () => {
         
     }
-    
-
-    const commentsList = comment;
 
     return (
 
