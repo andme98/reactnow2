@@ -10,7 +10,7 @@ const Inicio = () => {
                 ducimus placeat consequatur, tempora soluta quisquam! Sint 
                 eveniet natus molestias sapiente quaerat quisquam, optio illo!</p>
             <img className='imginicio' src='../lisa.jpg' alt="gaea"></img>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            <p className="pdark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute 

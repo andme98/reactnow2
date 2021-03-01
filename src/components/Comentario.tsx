@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const SeccionComentarios = () => {
+const Comentario = () => {
 
     const arrayComments = [
         {
@@ -27,10 +27,11 @@ const SeccionComentarios = () => {
         {
         arrayComments.map(v => {
             return (
-            <div className='comentario'>   
+            <div className='comentario' key={v.user}>   
                 <div>
                     <table>
-                        <tr>
+                        <tbody>
+                            <tr>
                             <td>
                                 <img className='imguser' alt="aea" src="../user.png"></img>
                             </td>
@@ -39,7 +40,8 @@ const SeccionComentarios = () => {
                                 <h4 className='hemail'>{v.user}</h4>
                                 <h5 className='hcomment'>{v.content}</h5>
                             </td>
-                        </tr>    
+                            </tr> 
+                        </tbody>    
                     </table>
                 </div>
             </div>   
@@ -47,18 +49,11 @@ const SeccionComentarios = () => {
         })
         
         }
-
-        
         </>
-        
-        
     );
-
-
-
 }
 
 
 
-export default SeccionComentarios
+export default Comentario
 

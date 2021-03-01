@@ -4,12 +4,13 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  
 } from 'react-router-dom';
 import Inicio from './pages/Inicio';
 import Contacto from './pages/Contacto';
 import Comentarios from './pages/Comentarios';
 import Footer from './components/Footer';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
@@ -17,17 +18,9 @@ function App() {
       <div>
         
         <Router>
-            <div>
-              <h1 style={{textDecoration:'none',display:'block',}}>React Now 2</h1>              
-            </div>
-            <div>
-              <Link style={{textDecoration:'none',display:'inline-block', paddingRight:'10px', fontWeight:'bold'}} to="/#"><div>Inicio</div></Link>            
-              <Link style={{textDecoration:'none',display:'inline-block', fontWeight:'bold'}} to="/contacto"><div>Contacto</div></Link>
-              <Link style={{textDecoration:'none',display:'inline-block', paddingLeft:'10px', fontWeight:'bold'}} to="/comentarios"><div>Comentarios</div></Link>
-            </div>                    
-            <hr></hr>
-          
-          
+
+          <NavBar />
+
           <Switch>
             <Route path="/" exact>
                 <Inicio />
@@ -45,9 +38,12 @@ function App() {
                 <Comentarios />
             </Route>
           </Switch>
+        
+          <Footer />
+
         </Router>
 
-        <Footer />
+        
       </div>
     </div>
   );
