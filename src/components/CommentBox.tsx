@@ -2,8 +2,6 @@ import React from 'react'
 import {useState} from 'react'
 
 const CommentBox = () => {
-
-    const [comment, setComment] = useState([]);
     
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
